@@ -1,0 +1,11 @@
+POST http://localhost:8080/api/cooks
+Content-Type: application/json
+  {
+  "id": 7,
+  "name": "New food",
+  "description": "new",
+  "ingredients": "fish",
+  "instructions": "Sear steak and ...",
+  "category": "American",
+  "image": "steak.jpg"
+}  

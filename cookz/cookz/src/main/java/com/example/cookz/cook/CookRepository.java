@@ -14,12 +14,37 @@ public class CookRepository {
         return cooks;
     }
 
-    Cook findById(int id) {
-        return cooks.stream().filter(c -> c.getId() == id).findFirst().orElse(null);
+    // Optional instead of Cook because the id might not exist. a non null value.
+    Optional<Cook> findById(int id) {
+        return cooks.stream()
+                .filter(c -> c.getId() == id)
+                .findFirst();
+    }
+    //post
+    void create(Cook cook){
+        cooks.add(cook);
     }
 
-    
+    //update
 
+    void update(Cook cook, Integer id){
+        Optional<Cook> existingCook = findById(id);
+        if (existingCook.isPresent()){
+            cooks.set(cooks.indexOf(existingCook.get()), cook);
+            
+        }
+    }
+
+    //delete 
+
+    void delete(Integer id){
+        Optional<Cook> existingCook = findById(id);
+        if(existingCook.isPresent()){
+            cooks.remove(existingCook.get());
+        }
+        //OR
+        //cooks.removeIf(c -> c.getId() == id);
+    }
     // its like seed data, we are adding some data to the list.
     // used on a method that needs to be executed after dependency injection to
     // perform any initialization.

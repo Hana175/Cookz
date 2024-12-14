@@ -2,8 +2,12 @@ package com.example.cookz.cook;
 
 import java.util.Objects;
 
+import jakarta.validation.constraints.NotEmpty;
+
+//not empty is a form of validation
 public class Cook {
     private int id;
+    @NotEmpty //name is not to be empty
     private String name;
     private String description;
     private String ingredients;
@@ -11,6 +15,7 @@ public class Cook {
     private String category;
     private String image;
 
+    //custom constraints.. validating things using a constructor.. example.
     public Cook(int id, String name, String description, String ingredients, String instructions, String category,
             String image) {
         this.id = id;
@@ -20,6 +25,10 @@ public class Cook {
         this.instructions = instructions;
         this.category = category;
         this.image = image;
+        // custom constraints.. validating things using a constructor.. example.
+        if(name.isEmpty()){
+            throw new IllegalArgumentException("Recipe must have a name");
+        }
 
     }
 
@@ -54,6 +63,8 @@ public class Cook {
     public String getImage() {
         return image;
     }
+    //validation .. create validation API
+   //go for dependencies.
 
     @Override
 
