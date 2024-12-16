@@ -1,0 +1,94 @@
+{
+  "cooks": [
+    {
+      "id": 1,
+      "name": "Classic Spaghetti Bolognese",
+      "description": "A traditional Italian pasta dish with rich meat sauce.",
+      "ingredients": "Spaghetti, minced beef, tomato sauce, garlic, onion, olive oil",
+      "instructions": "Cook spaghetti. Prepare sauce by sautéing garlic and onion, adding beef, and mixing with tomato sauce.",
+      "category": "Italian",
+      "image": "spaghetti_bolognese.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Grilled Chicken Caesar Salad",
+      "description": "Crisp romaine lettuce with grilled chicken and Caesar dressing.",
+      "ingredients": "Romaine lettuce, grilled chicken, Caesar dressing, croutons, Parmesan cheese",
+      "instructions": "Grill chicken, chop lettuce, mix all ingredients, and drizzle Caesar dressing.",
+      "category": "Salad",
+      "image": "chicken_caesar_salad.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Beef Tacos",
+      "description": "Crispy tacos filled with seasoned beef and toppings.",
+      "ingredients": "Ground beef, taco shells, lettuce, cheese, salsa, sour cream",
+      "instructions": "Cook beef with seasoning. Fill taco shells with beef and toppings.",
+      "category": "Mexican",
+      "image": "beef_tacos.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Margherita Pizza",
+      "description": "A classic pizza with tomato, mozzarella, and fresh basil.",
+      "ingredients": "Pizza dough, tomato sauce, mozzarella, fresh basil, olive oil",
+      "instructions": "Spread tomato sauce on dough, top with mozzarella and basil, bake until golden.",
+      "category": "Italian",
+      "image": "margherita_pizza.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Butter Chicken",
+      "description": "Rich and creamy Indian butter chicken curry.",
+      "ingredients": "Chicken, butter, cream, tomato puree, spices, garlic, ginger",
+      "instructions": "Cook chicken with spices. Prepare creamy tomato sauce and mix with chicken.",
+      "category": "Indian",
+      "image": "butter_chicken.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Vegetable Stir Fry",
+      "description": "A quick and healthy stir-fried vegetable medley.",
+      "ingredients": "Broccoli, bell pepper, carrot, soy sauce, garlic, ginger",
+      "instructions": "Stir-fry vegetables in garlic and ginger. Add soy sauce for flavor.",
+      "category": "Asian",
+      "image": "vegetable_stir_fry.jpg"
+    },
+    {
+      "id": 7,
+      "name": "BBQ Ribs",
+      "description": "Tender pork ribs slathered in smoky BBQ sauce.",
+      "ingredients": "Pork ribs, BBQ sauce, salt, pepper, garlic powder",
+      "instructions": "Season ribs, bake until tender, and coat with BBQ sauce.",
+      "category": "BBQ",
+      "image": "bbq_ribs.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Sushi Rolls",
+      "description": "Delicate sushi rolls filled with fresh ingredients.",
+      "ingredients": "Sushi rice, nori, salmon, cucumber, avocado, soy sauce",
+      "instructions": "Roll sushi with rice, nori, and fillings. Slice and serve with soy sauce.",
+      "category": "Japanese",
+      "image": "sushi_rolls.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Pancakes",
+      "description": "Fluffy pancakes served with maple syrup.",
+      "ingredients": "Flour, eggs, milk, sugar, baking powder, butter",
+      "instructions": "Mix batter, cook on griddle until golden, serve with syrup.",
+      "category": "Breakfast",
+      "image": "pancakes.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Chocolate Brownies",
+      "description": "Rich and fudgy chocolate brownies.",
+      "ingredients": "Butter, sugar, cocoa powder, eggs, flour, chocolate chips",
+      "instructions": "Mix ingredients, pour into pan, bake until set.",
+      "category": "Dessert",
+      "image": "chocolate_brownies.jpg"
+    }
+  ]
+}

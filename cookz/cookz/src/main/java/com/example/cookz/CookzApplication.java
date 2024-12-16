@@ -1,13 +1,9 @@
 package com.example.cookz;
 
-import com.example.cookz.cook.Cook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.core.env.CommandLinePropertySource;
 
 //we have a tomcat server running, we have a spring application running on top of it.
 //MVC model view controller, we have a controller that handles requests, a model that handles data, and a view that handles the UI.
@@ -35,13 +31,15 @@ public class CookzApplication {
 	}
 
 	// command line runner: run code when the application starts.
-	@Bean
-	CommandLineRunner cook() {
-		return args -> {
-			Cook cook = new Cook(1, "Pasta", "Italian pasta", "pasta, tomato sauce, cheese",
-					"boil pasta, add sauce, add cheese", "Italian", "pasta.jpg");
-			log.info("Cook:" + cook);
-		};
-	}
+//	 @Bean
+//	 //bean annotation creates a bean in application context
+//	 //functional interface: an interface which has a single abstract method
+//	 CommandLineRunner cook(CookRepository cookRepository) {
+//	 return args -> {
+//	 Cook cook = new Cook(1, "Pasta", "Italian pasta", "pasta, tomato sauce, cheese", "boil pasta, add sauce, add cheese", "Italian", "pasta.jpg");
+//	 log.info("Cook:" + cook);
+//	 //cookRepository.create(cook);
+//	 };
+//	 }
 
 }
